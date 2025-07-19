@@ -17,4 +17,7 @@ commit_message = f"✅ Auto-commit for {today}"
 subprocess.run(["git", "commit", "-m", commit_message])
 
 # Push to GitHub
-subprocess.run(["git", "push", "origin", "main"])
+subprocess.run([r"C:\Program Files\Git\bin\git.exe", "add", "."], shell=True)
+subprocess.run([r"C:\Program Files\Git\bin\git.exe", "commit", "-m", commit_message], shell=True)
+subprocess.run([r"C:\Program Files\Git\bin\git.exe", "push", "origin", "main"], shell=True)
+
