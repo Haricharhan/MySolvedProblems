@@ -12,7 +12,7 @@ os.chdir(repo_path)
 subprocess.run(["git", "add", "."])
 
 # Commit with today's date
-today = datetime.datetime.now().strftime("%Y-%m-%d")
+today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 commit_message = f"✅ Auto-commit for {today}"
 subprocess.run(["git", "commit", "-m", commit_message])
 
