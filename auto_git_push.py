@@ -65,4 +65,4 @@ run_cmd([git_path, "commit", "-m", commit_message], timeout=30, description=f"Co
 run_cmd([git_path, "push", "origin", "main"], timeout=60, description="Pushing to GitHub")
 
 # Done
-log_message("Pushed to GitHub successfully")
+log_message("Pushed to GitHub successfully ✅🚀")
